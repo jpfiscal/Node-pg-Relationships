@@ -1,0 +1,16 @@
+{
+  "name": "express-biztime",
+  "version": "1.0.0",
+  "description": "exercise for ch35.1.11",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
