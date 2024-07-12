@@ -15,7 +15,7 @@ router.get("/", async function(req,res,next){
 router.get("/:code", async function(req,res,next){
     try{
         const compQuery = await db.query(
-            `SELECT * FROM companies AS c INNER JOIN invoices AS i ON c.code = i.comp_code
+            `SELECT * FROM companies AS c LEFT JOIN invoices AS i ON c.code = i.comp_code
             WHERE code = $1`, 
             [req.params.code]);
         const compdata = compQuery.rows[0];
